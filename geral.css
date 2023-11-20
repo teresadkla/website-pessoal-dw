@@ -14,24 +14,62 @@
     font-family: 'Unbounded', sans-serif;
 
 }
-body{
-    background-color:var(--preto);
+
+body {
+    background-color: var(--preto);
 }
 
- #intro{
+#intro {
     position: relative;
-    height: 100vh;
-   display: flex;
+  /*  height: 100vh;*/
+    display: flex;
     align-items: center;
     justify-content: center;
- }
+}
+
+.keywords {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+    z-index: -10;
+    /*padding*/
+}
+
+.WD {
+    grid-column: 3 / span 5;
+    grid-row: 1/ span 1;
+}
+.UX{
+    grid-column: 10 / span 2;
+    grid-row: 2/ span 1;
+
+}
+.GD{
+    grid-column: 5 / span 5;
+    grid-row: 6/ span 1;
+}
+.Illustration{
+    grid-column: 1 / span 5;
+    grid-row: 5/ span 1;
+    
+}
+.Anima{
+    grid-column: 9 / span 3;
+    grid-row: 5/ span 1;
+    
+}
+
+.intro-names{
+    grid-column: 3 / span 8; /* Starts at column 3 and spans 8 columns */
+  grid-row: 2 / span 2;
+}
  h1 {
     font-size: 5.5rem;
     color: var(--lilas);
     text-align: left;
     display: flex;
     justify-content: center;
-   
 }
 
 h2 {
@@ -40,7 +78,7 @@ h2 {
 }
 
 h4 {
-    font-size:1rem;
+    font-size: 1rem;
     color: var(--claro);
 }
 
@@ -48,19 +86,22 @@ h4 {
 .menulist li {
     display: inline;
 }*/
-.menu{
- position: fixed;
- left: 50%; /* Center the menu horizontally */
- transform: translate(-50%, -50%); /* Centering trick */
+.menu {
+    position: fixed;
+    left: 50%;
+    /* Center the menu horizontally */
+    transform: translate(-50%, -50%);
+    /* Centering trick */
 
 }
 
-.menulist{
+.menulist {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8%;
-    background-color: rgba(134, 80, 134, 0.2); /* Use rgba for background color with 30% opacity */
+    background-color: rgba(134, 80, 134, 0.2);
+    /* Use rgba for background color with 30% opacity */
     width: 35vw;
     height: 10vh;
     border-radius: 10px;
@@ -68,9 +109,10 @@ h4 {
     overflow: hidden;
     position: relative;
     bottom: 50vh;
-  
+
 }
-.menulist li a{
-     text-decoration: none;
+
+.menulist li a {
+    text-decoration: none;
 }
 
