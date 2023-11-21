@@ -261,7 +261,7 @@ p {
 
 }
 
-
+/*Mouse Pointer*/
 svg {
     width: 80px;
     position: absolute;
@@ -285,3 +285,14 @@ text {
         transform: rotate(359deg);
     }
 }
+
+.box {
+    /*border: silver solid;*/
+    color: #FFDDFF;
+    width:100%;
+   /* height:100vh;*/
+   /* margin:10px;*/
+    padding:5px;
+    float: left;
+  }
+  
