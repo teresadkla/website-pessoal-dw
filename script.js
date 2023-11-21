@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var usedImages = [];
 
-    document.addEventListener('click', function (event) {
+    imageContainer.addEventListener('click', function (event) {
         // Check if all images have been used
         if (usedImages.length === imageSources.length) {
             // If all images have been used, reset the used images array
