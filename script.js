@@ -5,17 +5,20 @@ document.addEventListener('DOMContentLoaded', function () {
         // Create an image element
         var img = document.createElement('img');
 
-        // Set the source of the image (replace 'path/to/your/image.png' with your actual image path)
-        img.src = 'path/to/your/image.png';
+        // Set the source of the image (this can be a URL or a local path)
+        img.src = 'images/poster.png';
 
-        // Set the position based on the click coordinates and image dimensions
+        // Set other attributes if needed (e.g., width, height, etc.)
+        img.width = 100;
+        img.height = 100;
+
+        // Set the position based on the click coordinates
         img.style.position = 'absolute';
-
-        // Calculate the left position to center the image horizontally
         img.style.left = (event.clientX - img.width / 2) + 'px';
-
-        // Calculate the top position to center the image vertically
         img.style.top = (event.clientY - img.height / 2) + 'px';
+
+        // Add the 'bounce' class to apply the animation
+        img.classList.add('bounce');
 
         // Append the image to the container
         imageContainer.appendChild(img);

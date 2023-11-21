@@ -25,10 +25,34 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     overflow: hidden;
 
 }
+
+img{
+    z-index: -50;
+    width: 50%;
+    height: 50%;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(0.8);
+    }
+   100%{
+    transform: scale(1);
+   }
+}
+
+.bounce {
+    animation: bounce 0.5s ease-out;
+}
+
+
+
 
 .keywords {
     display: grid;
@@ -145,7 +169,4 @@ p {
 }
 
 
-img{
-    width: 50%;
-    height: 50%;
-}
+
