@@ -160,13 +160,96 @@ p {
 .name13sa{
     display: flex;
     background-color: var(--lilas);
+    color: var(--preto);
     width: 10vw;
     height: 7vh;
     justify-content: center;
     align-content: center;
     align-items: center;
     border-radius: 100px;
+    position: relative;
+    left: 60vh;
+    bottom: 23vh;
+    rotate: 10deg;
 }
 
+.cinema{
+    display: flex;
+    background-color: var(--lilas);
+    color: var(--preto);
+    width: 10vw;
+    height: 7vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: relative;
+    left: 50vh;
+    bottom: 18vh;
+    rotate: -5deg
+}
 
+.photo{
+    display: flex;
+    background-color: var(--lilas);
+    color: var(--preto);
+    width: 15vw;
+    height: 7vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: relative;
+    left: 120vh;
+    bottom: 40vh;
+    rotate: -10deg;
+}
 
+.Dzain{
+    display: flex;
+    background-color: var(--lilas);
+    color: var(--preto);
+    width: 10vw;
+    height: 7vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: relative;
+    left: 55vw;
+    bottom: 23vh;
+    rotate: 15deg;
+}
+
+.jeK{
+    display: flex;
+    background-color: var(--lilas);
+    color: var(--preto);
+    width: 15vw;
+    height: 7vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: relative;
+    left: 62vh;
+    bottom: 28vh;
+    rotate: -15deg;
+}
+
+.cat{
+    display: flex;
+    background-color: var(--lilas);
+    color: var(--preto);
+    width: 8vw;
+    height: 7vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: relative;
+    left: 130vh;
+    bottom: 49vh;
+    rotate: 5deg;
+
+}
