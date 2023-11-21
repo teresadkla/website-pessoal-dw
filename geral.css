@@ -21,10 +21,13 @@ body {
 
 #intro {
     position: relative;
-  /*  height: 100vh;*/
+    /*  height: 100vh;*/
     display: flex;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
+
 }
 
 .keywords {
@@ -42,31 +45,36 @@ body {
     grid-column: 3 / span 5;
     grid-row: 1/ span 1;
 }
-.UX{
+
+.UX {
     grid-column: 10 / span 2;
     grid-row: 2/ span 1;
 
 }
-.GD{
+
+.GD {
     grid-column: 5 / span 5;
     grid-row: 6/ span 1;
 }
-.Illustration{
+
+.Illustration {
     grid-column: 1 / span 5;
     grid-row: 5/ span 1;
-    
-}
-.Anima{
-    grid-column: 9 / span 3;
-    grid-row: 5/ span 1;
-    
+
 }
 
-.intro-names{
-    grid-column: 3 / span 8; /* Starts at column 3 and spans 8 columns */
-  grid-row: 2 / span 2;
+.Anima {
+    grid-column: 9 / span 3;
+    grid-row: 5/ span 1;
+
 }
- h1 {
+
+.intro-names {
+    grid-column: 3 / span 8;
+    grid-row: 2 / span 2;
+}
+
+h1 {
     font-size: 5.5rem;
     color: var(--lilas);
     text-align: left;
@@ -83,6 +91,11 @@ h4 {
     font-size: 1rem;
     color: var(--claro);
 }
+p {
+    font-size: 1rem;
+    color: var(--claro);
+    width:30%;
+}
 
 /*
 .menulist li {
@@ -91,10 +104,8 @@ h4 {
 .menu {
     position: fixed;
     left: 50%;
-    /* Center the menu horizontally */
     transform: translate(-50%, -50%);
-    /* Centering trick */
-
+   
 }
 
 .menulist {
@@ -103,18 +114,38 @@ h4 {
     align-items: center;
     gap: 8%;
     background-color: rgba(134, 80, 134, 0.2);
-    /* Use rgba for background color with 30% opacity */
     width: 35vw;
     height: 10vh;
     border-radius: 10px;
     list-style-type: none;
     overflow: hidden;
     position: relative;
-    bottom: 50vh;
+    bottom: 25vh;
 
 }
 
 .menulist li a {
     text-decoration: none;
 }
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.name13sa{
+    display: flex;
+    background-color: var(--lilas);
+    width: 10vw;
+    height: 7vh;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+
+img{
+    width: 50%;
+    height: 50%;
+}
