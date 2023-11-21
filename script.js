@@ -1,24 +1,25 @@
 document.addEventListener('DOMContentLoaded', function () {
     var imageContainer = document.getElementById('intro');
 
-    // Array of image sources
+    // Array de imagens
     var imageSources = [
         'images/poster.png',
         'images/1.png',
         'images/relogio.png'
-        // Add more image sources as needed
+    
     ];
 
     var usedImages = [];
 
     imageContainer.addEventListener('click', function (event) {
-        // Check if all images have been used
+        // Ver se todas as imagens estão a ser usadas
         if (usedImages.length === imageSources.length) {
-            // If all images have been used, reset the used images array
+            // Se sim dar reset no array de imgs
             usedImages = [];
         }
 
-        // Get an unused random image source from the array
+
+        //Ir buscar uma imagem random não usada ao array
         var unusedImageSources = imageSources.filter(function (source) {
             return !usedImages.includes(source);
         });
@@ -26,29 +27,29 @@ document.addEventListener('DOMContentLoaded', function () {
         var randomIndex = Math.floor(Math.random() * unusedImageSources.length);
         var randomImageSource = unusedImageSources[randomIndex];
 
-        // Mark the image as used
+        // Marca a imagem como usada
         usedImages.push(randomImageSource);
 
-        // Create an image element
+        // Cria um elemento imagem
         var img = document.createElement('img');
 
-        // Set the source of the image
+        // Set a src nessa imagem
         img.src = randomImageSource;
 
-        // Set the position based on the click coordinates
+        // Set na posição segundo o click
         img.style.position = 'absolute';
         img.style.left = (event.clientX - img.width / 2) + 'px';
         img.style.top = (event.clientY - img.height / 2) + 'px';
 
-        // Add the 'bounce' class to apply the animation
+        // Efeito bounce
         img.classList.add('bounce');
 
-        // Load the image to get its natural width and height
+        // Load img mantendo as suas proporções originias
         img.onload = function () {
-            // Calculate the aspect ratio
+            // Calcula o aspect ratio
             var aspectRatio = img.width / img.height;
 
-            // Set the width and height based on the aspect ratio
+            
             if (aspectRatio >= 1) {
                 img.style.width = '300px';
                 img.style.height = 'auto';
@@ -57,11 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 img.style.height = '300px';
             }
 
-            // Update the position based on the click coordinates
+            // Atualiza a posição segundo o click
             img.style.left = (event.clientX - img.clientWidth / 2) + 'px';
             img.style.top = (event.clientY - img.clientHeight / 2) + 'px';
 
-            // Append the image to the container
+            // Acrescenta a imagem ao contentor respetivo
             imageContainer.appendChild(img);
         };
     });
