@@ -6,7 +6,8 @@
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width">
     <link href="geral.css" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
 
 </head>
 0
@@ -46,7 +47,7 @@
             </ul>
         </div>
         <div class="about">
-            <div class="box" ondragover="return false" ondrop="drop(this, event)">
+           <!-- <div class="box" ondragover="return false" ondrop="drop(this, event)">-->
                 <div class="text" id="text">
                     <p>Lorem ipsum dolor sit amet consectetur. Egestas ultrices id convallis velit nam pharetra.<br>
                         Nunc
@@ -65,8 +66,15 @@
                     <h4 class="cat">Cats</h4>
 
                 </div>
-            </div>
+           <!-- </div>-->
         </div>
+
+        <div id="drag-1" class="draggable">
+            <p> You can drag one element </p>
+          </div>
+          <div id="drag-2" class="draggable">
+            <p> with each pointer </p>
+          </div>
 
         <!--Animação mouse pointer  -->
         <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -85,8 +93,12 @@
 
         </svg>
     </main>
+ 
     <script src="script.js"></script>
     <script src="mouse.js"></script>
+    <script type="module" src="dragdrop.js"></script>
+   
+    
 </body>
 
 </html>
