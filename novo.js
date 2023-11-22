@@ -1,16 +1,3 @@
-
-
-import interact from 
-
-
-interact('.item').draggable({
-    listeners: {
-      move (event) {
-        console.log(event.pageX, event.pageY)
-      },
-    },
-  })
-
 // target elements with the "draggable" class
 interact('.draggable')
   .draggable({
