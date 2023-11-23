@@ -17,6 +17,7 @@
 
 body {
     background-color: var(--preto);
+    overflow-x: hidden; 
 }
 
 #intro {
@@ -258,8 +259,22 @@ p {
     left: 130vh;
     bottom: 49vh;
     rotate: 5deg;
+ 
 
 }
+#drag-1, #drag-2, #drag-3, #drag-4, #drag-5, #drag-6 {
+   /* width: 25%;
+    min-height: 6.5em;
+    margin: 1rem 0 0 1rem;
+   background-color: #29e;
+    color: white;
+    border-radius: 0.75em;
+    padding: 4%;*/
+    touch-action: none;
+    user-select: none;
+    transform: translate(0px, 0px);
+   
+  }
 
 /*Mouse Pointer*/
 svg {
@@ -286,25 +301,5 @@ text {
     }
 }
 
-.box {
-    /*border: silver solid;*/
-    color: #FFDDFF;
-    width:100%;
-   /* height:100vh;*/
-   /* margin:10px;*/
-    padding:5px;
-    float: left;
-  }
+
   
-  #drag-1, #drag-2 {
-    width: 25%;
-    min-height: 6.5em;
-    margin: 1rem 0 0 1rem;
-    background-color: #29e;
-    color: white;
-    border-radius: 0.75em;
-    padding: 4%;
-    touch-action: none;
-    user-select: none;
-    transform: translate(0px, 0px);
-  }
