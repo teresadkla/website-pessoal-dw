@@ -17,6 +17,7 @@
 
 body {
     background-color: var(--preto);
+    overflow-x: hidden; 
 }
 
 #intro {
@@ -29,29 +30,34 @@ body {
 
 }
 
-img{
+img {
     z-index: -50;
     width: 50%;
     height: 50%;
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
         transform: scale(1);
     }
+
     20% {
         transform: scale(0.8);
     }
-   100%{
-    transform: scale(1);
-   }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 .bounce {
     animation: bounce 0.5s ease-out;
 }
-
-
 
 
 .keywords {
@@ -115,10 +121,11 @@ h4 {
     font-size: 1rem;
     color: var(--claro);
 }
+
 p {
     font-size: 1rem;
     color: var(--claro);
-    width:30%;
+    width: 30%;
 }
 
 /*
@@ -129,7 +136,7 @@ p {
     position: fixed;
     left: 50%;
     transform: translate(-50%, -50%);
-   
+
 }
 
 .menulist {
@@ -151,13 +158,14 @@ p {
 .menulist li a {
     text-decoration: none;
 }
-.text{
+
+.text {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.name13sa{
+.name13sa {
     display: flex;
     background-color: var(--lilas);
     color: var(--preto);
@@ -173,7 +181,7 @@ p {
     rotate: 10deg;
 }
 
-.cinema{
+.cinema {
     display: flex;
     background-color: var(--lilas);
     color: var(--preto);
@@ -189,7 +197,7 @@ p {
     rotate: -5deg
 }
 
-.photo{
+.photo {
     display: flex;
     background-color: var(--lilas);
     color: var(--preto);
@@ -205,7 +213,7 @@ p {
     rotate: -10deg;
 }
 
-.Dzain{
+.Dzain {
     display: flex;
     background-color: var(--lilas);
     color: var(--preto);
@@ -221,7 +229,7 @@ p {
     rotate: 15deg;
 }
 
-.jeK{
+.jeK {
     display: flex;
     background-color: var(--lilas);
     color: var(--preto);
@@ -237,7 +245,7 @@ p {
     rotate: -15deg;
 }
 
-.cat{
+.cat {
     display: flex;
     background-color: var(--lilas);
     color: var(--preto);
@@ -251,5 +259,47 @@ p {
     left: 130vh;
     bottom: 49vh;
     rotate: 5deg;
+ 
 
 }
+#drag-1, #drag-2, #drag-3, #drag-4, #drag-5, #drag-6 {
+   /* width: 25%;
+    min-height: 6.5em;
+    margin: 1rem 0 0 1rem;
+   background-color: #29e;
+    color: white;
+    border-radius: 0.75em;
+    padding: 4%;*/
+    touch-action: none;
+    user-select: none;
+    transform: translate(0px, 0px);
+   
+  }
+
+/*Mouse Pointer*/
+svg {
+    width: 80px;
+    position: absolute;
+    animation: rotation 4.5s infinite linear;
+    pointer-events: none;
+    transition: top 0.2s, left 0.2s;
+    transition-timing-function: ease-out;
+}
+
+text {
+    font-size: 4em;
+    fill: var(--claro);
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+  
