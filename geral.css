@@ -10,9 +10,7 @@
     --lilas: #EE82EE;
     --roxo: #865086;
 
-
     font-family: 'Unbounded', sans-serif;
-
 }
 
 body {
@@ -68,9 +66,9 @@ p {
 }
 
 img {
-    z-index: -50;
-    width: 30%;
-    height: 30%;
+   /* z-index: -50;*/
+    width: 50%;
+    height: 50%;
 }
 
 @keyframes bounce {
@@ -99,6 +97,7 @@ img {
 
 
 .menulist {
+    z-index: 50;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,6 +240,7 @@ img {
     }
 
     .menulist {
+        z-index: 50;
         width: 35vw;
         height: 10vh;
         position: relative;
@@ -363,6 +363,16 @@ img {
         top: 20vh;
         left: 10vw;
     }
+
+    .me{
+        position: relative;
+        top:20vh;
+    }
+    .words{
+        position: relative;
+        top: 5vh;
+    }
+
 }
 /* INTERMÉDIO/ TABLETS*/
 @media screen and (min-width: 600px) and (max-width: 980px) {
@@ -375,10 +385,12 @@ img {
         position: fixed;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 50;
 
     }
 
     .menulist {
+        z-index: 50;
         width: 50vw;
         height: 10vh;
         position: relative;
@@ -443,9 +455,6 @@ img {
         font-size: 0.8rem;
         width: 60%;
     }
-
-
-
 
     .name13sa {
         width: 15vw;
@@ -574,6 +583,7 @@ img {
     }
 
     .menu {
+        z-index: 50;
         position: fixed;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -581,6 +591,7 @@ img {
     }
 
     .menulist {
+        z-index: 50;
         width: 75vw;
         height: 10vh;
         position: relative;
@@ -643,9 +654,6 @@ img {
         width: 60%;
     }
 
-
-
-
     .name13sa {
         width: 20vw;
         height: 7vh;
@@ -707,7 +715,9 @@ img {
         margin-top: 2%;
         justify-content: center;
     }
-
+#base{
+    width:50%;
+}
 
     #olhos {
         width: 35%;

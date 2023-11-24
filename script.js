@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Array de imagens
     var imageSources = [
         'images/poster.png',
-        'images/1.png',
-        'images/relogio.png'
+        'images/CCC.png',
+        'images/credencial.png',
+        'images/SA.png',
+        'images/dot.png'
     
     ];
 
@@ -51,11 +53,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             
             if (aspectRatio >= 1) {
-                img.style.width = '300px';
+                img.style.width = '450px';
                 img.style.height = 'auto';
             } else {
                 img.style.width = 'auto';
-                img.style.height = '300px';
+                img.style.height = '450px';
             }
 
             // Atualiza a posição segundo o click
