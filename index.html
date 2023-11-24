@@ -86,29 +86,15 @@
             <!-- </div>-->
         </div>
 
-        <!--Animação mouse pointer  -->
-        <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 500 500">
-            <title>Circular Text Path</title>
-
-            <defs>
-                <path id="textcircle" d="M250,400
-                        a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
-            </defs>
-            <rect width="100%" height="100%" fill="none" />
-            <text>
-                <textPath xlink:href="#textcircle" aria-label="All for One &amp; One for All" textLength="900"> Click
-                    and drag! </textPath>
-            </text>
-
-        </svg>
+       
 
         <div class="goofyflower">
             <h4 class="moreinfo">Complete the ilustration to get my contacts </h4>
 
+            <img id="seta" src="images/seta.svg" alt="seta">
+
             <div id="base" class="base">
                 <img src="images/base.svg" alt="base flower">
-
             </div>
 
             <div id="olhos" class="draggable">
@@ -135,7 +121,22 @@
                     onclick="window.location.href='https://drive.google.com/file/d/15oKbGk8I6wBAl9ci-g6VUp_q-mV9Psfb/view?usp=sharing';">
 
             </div>
+ <!--Animação mouse pointer  -->
+ <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
+ viewBox="0 0 500 500">
+ <title>Circular Text Path</title>
 
+ <defs>
+     <path id="textcircle" d="M250,400
+             a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
+ </defs>
+ <rect width="100%" height="100%" fill="none" />
+ <text>
+     <textPath xlink:href="#textcircle" aria-label="All for One &amp; One for All" textLength="900"> Click
+         and drag! </textPath>
+ </text>
+
+</svg>
 
     </main>
 
@@ -144,7 +145,7 @@
     <script src="dragdrop.js"></script>
     <script src="dragdrop2.js"></script>
     <script src="texto.js"></script>
-    <!--type="module"-->
+
 </body>
 
 </html>
