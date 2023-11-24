@@ -16,9 +16,36 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: var(--preto);
-    overflow-x: hidden; 
-   
+    overflow-x: hidden;
+
+}
+
+header {
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--lilas);
+    text-align: left;
+    display: flex;
+    justify-content: center;
+
+}
+
+h2 {
+    color: var(--claro);
+
+}
+
+h4 {
+    color: var(--claro);
+}
+
+p {
+    color: var(--claro);
 }
 
 #intro {
@@ -28,6 +55,15 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    width: 100%;
+
+}
+
+.keywords {
+    display: grid;
+    gap: 10px;
+    z-index: -10;
+    padding: 3%;
 
 }
 
@@ -61,84 +97,6 @@ img {
 }
 
 
-.keywords {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 10px;
-    z-index: -10;
-    width: 100%;
-    height: 100vh;
-    padding: 3%;
-}
-
-.WD {
-    grid-column: 3 / span 5;
-    grid-row: 1/ span 1;
-}
-
-.UX {
-    grid-column: 10 / span 2;
-    grid-row: 2/ span 1;
-
-}
-
-.GD {
-    grid-column: 5 / span 5;
-    grid-row: 6/ span 1;
-}
-
-.Illustration {
-    grid-column: 1 / span 5;
-    grid-row: 5/ span 1;
-
-}
-
-.Anima {
-    grid-column: 9 / span 3;
-    grid-row: 5/ span 1;
-
-}
-
-.intro-names {
-    grid-column: 3 / span 8;
-    grid-row: 2 / span 2;
-}
-
-h1 {
-    font-size: 5.5rem;
-    color: var(--lilas);
-    text-align: left;
-    display: flex;
-    justify-content: center;
-}
-
-h2 {
-    font-size: 2rem;
-    color: var(--claro);
-}
-
-h4 {
-    font-size: 1rem;
-    color: var(--claro);
-}
-
-p {
-    font-size: 1rem;
-    color: var(--claro);
-    width: 30%;
-}
-
-/*
-.menulist li {
-    display: inline;
-}*/
-.menu {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
 
 .menulist {
     display: flex;
@@ -146,14 +104,9 @@ p {
     align-items: center;
     gap: 8%;
     background-color: rgba(134, 80, 134, 0.2);
-    width: 35vw;
-    height: 10vh;
     border-radius: 10px;
     list-style-type: none;
     overflow: hidden;
-    position: relative;
-    bottom: 25vh;
-
 }
 
 .menulist li a {
@@ -166,161 +119,625 @@ p {
     align-items: center;
 }
 
-.name13sa {
-    display: flex;
-    background-color: var(--lilas);
-    color: var(--preto);
-    width: 10vw;
-    height: 7vh;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-radius: 100px;
-    position: relative;
-    left: 60vh;
-    bottom: 23vh;
-    rotate: 10deg;
-}
-
-.cinema {
-    display: flex;
-    background-color: var(--lilas);
-    color: var(--preto);
-    width: 10vw;
-    height: 7vh;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-radius: 100px;
-    position: relative;
-    left: 50vh;
-    bottom: 18vh;
-    rotate: -5deg
-}
-
-.photo {
-    display: flex;
-    background-color: var(--lilas);
-    color: var(--preto);
-    width: 15vw;
-    height: 7vh;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-radius: 100px;
-    position: relative;
-    left: 120vh;
-    bottom: 40vh;
-    rotate: -10deg;
-}
-
-.Dzain {
-    display: flex;
-    background-color: var(--lilas);
-    color: var(--preto);
-    width: 10vw;
-    height: 7vh;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-radius: 100px;
-    position: relative;
-    left: 55vw;
-    bottom: 23vh;
-    rotate: 15deg;
-}
-
-.jeK {
-    display: flex;
-    background-color: var(--lilas);
-    color: var(--preto);
-    width: 15vw;
-    height: 7vh;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-radius: 100px;
-    position: relative;
-    left: 62vh;
-    bottom: 28vh;
-    rotate: -15deg;
-}
-
+.name13sa,
+.cinema,
+.photo,
+.Dzain,
+.jeK,
 .cat {
     display: flex;
     background-color: var(--lilas);
     color: var(--preto);
-    width: 8vw;
-    height: 7vh;
     justify-content: center;
     align-content: center;
     align-items: center;
     border-radius: 100px;
-    position: relative;
-    left: 130vh;
-    bottom: 49vh;
-    rotate: 5deg;
- 
 
 }
-#drag-1, #drag-2, #drag-3, #drag-4, #drag-5, #drag-6,#olhos, #sorriso {
-   /* width: 25%;
-    min-height: 6.5em;
-    margin: 1rem 0 0 1rem;
-   background-color: #29e;
-    color: white;
-    border-radius: 0.75em;
-    padding: 4%;*/
+
+
+#drag-1,
+#drag-2,
+#drag-3,
+#drag-4,
+#drag-5,
+#drag-6,
+#olhos,
+#sorriso {
     touch-action: none;
     user-select: none;
     transform: translate(0px, 0px);
-   
-  }
 
-/*Mouse Pointer*/
-svg {
-    width: 80px;
-    position: absolute;
-    animation: rotation 4.5s infinite linear;
-    pointer-events: none;
-    transition: top 0.2s, left 0.2s;
-    transition-timing-function: ease-out;
 }
 
-text {
-    font-size: 4em;
-    fill: var(--claro);
-}
-
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(359deg);
-    }
-}
-
-
-  
-.base {
-    position: relative;
-}
 
 #frase {
     display: none;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10vh;
+    margin-bottom: 5%;
 }
 
- #olhos{
-    width: 35%;
-    height: 35%;
+.contacts {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
 }
-#sorriso{
-    width: 45%;
-    height: 45%; 
+
+
+
+/* RESPONSIVIDADE DESKTOP*/
+@media screen and (min-width: 980px) {
+    .menu {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    header{
+        margin-bottom: 5%;
+    }
+
+    .keywords {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .WD {
+        grid-column: 3 / span 5;
+        grid-row: 1/ span 1;
+    }
+
+    .UX {
+        grid-column: 11 / span 2;
+    grid-row: 3/ span 1;
+
+    }
+
+    .GD {
+        grid-column: 7 / span 5;
+        grid-row: 5/ span 1;
+    }
+
+    .Illustration {
+        grid-column: 1 / span 5;
+        grid-row: 5/ span 1;
+
+    }
+
+    .Anima {
+        grid-column: 9 / span 3;
+        grid-row: 1/ span 1;
+
+    }
+
+    .intro-names {
+        grid-column: 3 / span 8;
+        grid-row: 2 / span 2;
+    }
+
+    h1 {
+        font-size: 5.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        width: 30%;
+    }
+
+    .menulist {
+        width: 35vw;
+        height: 10vh;
+        position: relative;
+        bottom: 20vh;
+
+    }
+
+
+    .name13sa {
+        width: 10vw;
+        height: 7vh;
+        position: relative;
+        left: 60vh;
+        bottom: 23vh;
+        rotate: 10deg;
+    }
+
+    .cinema {
+        width: 10vw;
+        height: 7vh;
+        position: relative;
+        left: 50vh;
+        bottom: 18vh;
+        rotate: -5deg
+    }
+
+    .photo {
+        width: 15vw;
+        height: 7vh;
+        position: relative;
+        left: 120vh;
+        bottom: 40vh;
+        rotate: -10deg;
+    }
+
+    .Dzain {
+        width: 10vw;
+        height: 7vh;
+        position: relative;
+        left: 55vw;
+        bottom: 23vh;
+        rotate: 15deg;
+    }
+
+    .jeK {
+        width: 15vw;
+        height: 7vh;
+        position: relative;
+        left: 62vh;
+        bottom: 28vh;
+        rotate: -15deg;
+    }
+
+    .cat {
+        width: 8vw;
+        height: 7vh;
+        position: relative;
+        left: 130vh;
+        bottom: 49vh;
+        rotate: 5deg;
+    }
+
+    .base {
+        position: relative;
+        display: flex;
+        margin-top: 2%;
+        justify-content: center;
+    }
+
+
+    #olhos {
+        width: 35%;
+        height: 35%;
+        position: relative;
+        margin-bottom: 20v;
+        margin-left: 10%;
+        bottom: 0vh;
+    }
+
+    #sorriso {
+        width: 45%;
+        height: 45%;
+        position: relative;
+        margin-left: 80%;
+        bottom: 10vh;
+    }
+
+    /*Mouse Pointer*/
+    svg {
+        width: 80px;
+        position: absolute;
+        animation: rotation 4.5s infinite linear;
+        pointer-events: none;
+        transition: top 0.2s, left 0.2s;
+        transition-timing-function: ease-out;
+    }
+
+    text {
+        font-size: 4em;
+        fill: var(--claro);
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(359deg);
+        }
+    }
+    .moreinfo{
+        position: relative;
+        width:70%;
+        left:4%;
+    }
+    #seta{
+        position: relative;
+        width: 14%;
+        top: 20vh;
+        left: 10vw;
+    }
+}
+/* INTERMÉDIO/ TABLETS*/
+@media screen and (min-width: 600px) and (max-width: 980px) {
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .menu {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .menulist {
+        width: 50vw;
+        height: 10vh;
+        position: relative;
+        bottom: 90vh;
+    
+    }
+
+    .keywords {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        height: 100vh;
+        margin-bottom: 50%;
+        background: blue;
+        width: 100%;
+    }
+
+    .WD {
+        grid-column: 2 / span 10;
+        grid-row: 2/ span 1;
+    }
+
+    .UX {
+        grid-column: 10 / span 2;
+        grid-row: 6/ span 1;
+
+    }
+
+    .GD {
+        grid-column: 2 / span 10;
+        grid-row: 10/ span 1;
+    }
+
+    .Illustration {
+        grid-column: 4 / span 5;
+        grid-row: 4/ span 1;
+
+    }
+
+    .Anima {
+        grid-column: 8 / span 3;
+        grid-row: 2 / span 1;
+    }
+
+    .intro-names {
+        grid-column: 2/ span 10;
+        grid-row: 6 / span 2;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        width: 60%;
+    }
+
+
+
+
+    .name13sa {
+        width: 15vw;
+        height: 7vh;
+        position: relative;
+        left: 33vh;
+        bottom: 21vh;
+        rotate: 20deg;
+
+    }
+
+    .cinema {
+        width: 15vw;
+        height: 7vh;
+        position: relative;
+        left: 13vh;
+        bottom: 18vh;
+        rotate: -5deg;
+    }
+
+    .photo {
+        width: 25vw;
+        height: 7vh;
+        position: relative;
+        left: 89vh;
+        bottom: 37vh;
+        rotate: -20deg;
+    }
+
+    .Dzain {
+        width: 15vw;
+        height: 7vh;
+        position: relative;
+        left: 58vw;
+        bottom: 22vh;
+        rotate: 15deg;
+    }
+
+    .jeK {
+        width: 25vw;
+        height: 7vh;
+        position: relative;
+        left: 26vh;
+        bottom: 29vh;
+        rotate: -25deg;
+    }
+
+    .cat {
+        width: 10vw;
+        height: 7vh;
+        position: relative;
+        left: 100vh;
+        bottom: 45vh;
+        rotate: 5deg;
+    }
+
+    .base {
+        position: relative;
+        display: flex;
+        margin-top: 2%;
+        justify-content: center;
+    }
+
+
+    #olhos {
+        width: 35%;
+        height: 35%;
+        position: relative;
+        margin-bottom: 20v;
+        margin-left: 10%;
+        bottom: 0vh;
+    }
+
+    #sorriso {
+        width: 45%;
+        height: 45%;
+        position: relative;
+        margin-left: 80%;
+        bottom: 10vh;
+    }
+
+   
+    .moreinfo{
+        position: relative;
+        width:50%;
+        left:8%;
+    }
+    #seta{
+        position: relative;
+        width: 14%;
+        top: 6vh;
+        left: 10vw;
+    }
+    /*Mouse Pointer*/
+    svg {
+        width: 80px;
+        position: absolute;
+        animation: rotation 4.5s infinite linear;
+        pointer-events: none;
+        transition: top 0.2s, left 0.2s;
+        transition-timing-function: ease-out;
+    }
+
+    text {
+        font-size: 4em;
+        fill: var(--claro);
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(359deg);
+        }
+    }
+
+}
+
+/*MOBILE TELEMOVEL*/
+@media screen and (max-width: 600px) {
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .menu {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .menulist {
+        width: 75vw;
+        height: 10vh;
+        position: relative;
+        bottom: 43vh;
+    }
+
+    .keywords {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        height: 100vh;
+        margin-bottom: 50%;
+    }
+
+    .WD {
+        grid-column: 2 / span 10;
+        grid-row: 2/ span 1;
+    }
+
+    .UX {
+        grid-column: 9 / span 2;
+        grid-row: 3/ span 1;
+
+    }
+
+    .GD {
+        grid-column: 2 / span 10;
+        grid-row: 10/ span 1;
+    }
+
+    .Illustration {
+        grid-column: 4 / span 5;
+        grid-row: 4/ span 1;
+
+    }
+
+    .Anima {
+        grid-column: 7 / span 3;
+        grid-row: 9 / span 1;
+    }
+
+    .intro-names {
+        grid-column: 2/ span 10;
+        grid-row: 6 / span 2;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+    }
+
+    h4 {
+        font-size: 0.6rem;
+    }
+
+    p {
+        font-size: 0.6rem;
+        width: 60%;
+    }
+
+
+
+
+    .name13sa {
+        width: 20vw;
+        height: 7vh;
+        position: relative;
+        left: 8vh;
+        bottom: 20vh;
+        rotate: 20deg;
+
+    }
+
+    .cinema {
+        width: 20vw;
+        height: 7vh;
+        position: relative;
+        left: 6vh;
+        bottom: 16vh;
+        rotate: -5deg;
+    }
+
+    .photo {
+        width: 35vw;
+        height: 7vh;
+        position: relative;
+        left: 28vh;
+        bottom: 37vh;
+        rotate: -20deg;
+    }
+
+    .Dzain {
+        width: 20vw;
+        height: 7vh;
+        position: relative;
+        left: 55vw;
+        bottom: 27vh;
+        rotate: 15deg;
+    }
+
+    .jeK {
+        width: 30vw;
+        height: 7vh;
+        position: relative;
+        left: 13vh;
+        bottom: 29vh;
+        rotate: -25deg;
+    }
+
+    .cat {
+        width: 20vw;
+        height: 7vh;
+        position: relative;
+        left: 40vh;
+        bottom: 50vh;
+        rotate: 5deg;
+    }
+
+    .base {
+        position: relative;
+        display: flex;
+        margin-top: 2%;
+        justify-content: center;
+    }
+
+
+    #olhos {
+        width: 35%;
+        height: 35%;
+        position: relative;
+        margin-bottom: 20v;
+        margin-left: 10%;
+        bottom: 0vh;
+    }
+
+    #sorriso {
+        width: 45%;
+        height: 45%;
+        position: relative;
+        margin-left: 80%;
+        bottom: 10vh;
+    }
+
+    svg {
+        display: none
+    }
+    .moreinfo{
+        position: relative;
+        width:50%;
+        left:8%;
+    }
+    #seta{
+        position: relative;
+        width: 14%;
+        top: 6vh;
+        left: 10vw;
+    }
 }
