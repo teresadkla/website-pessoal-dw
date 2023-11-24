@@ -8,6 +8,7 @@
     <link href="geral.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
 
@@ -47,7 +48,7 @@
         </div>
         <div class="about">
             <!-- <div class="box" ondragover="return false" ondrop="drop(this, event)">-->
-            <div class="text" id="text">
+            <div class="text ink" id="text">
                 <p>Lorem ipsum dolor sit amet consectetur. Egestas ultrices id convallis velit nam pharetra.<br>
                     Nunc
                     nunc facilisis risus interdum. Ultrices pharetra maecenas pellentesque vitae.<br> Vitae pharetra
@@ -101,12 +102,30 @@
             </text>
 
         </svg>
+
+        <div class="goofyflower">
+            <h4 class="moreinfo">Complete the ilustration to  get my contacts </h4>
+
+            <div  id="base" class="base">
+                <img src="images/base.svg" alt="base flower">
+                <p id="frase">Aqui estão os meus contactos</p>
+            </div>
+            <div id="olhos" class="draggable">
+                <img src="images/olhos.svg" alt="olhinhos">
+            </div>
+            <div id="sorriso" class="draggable">
+                <img src="images/sorriso.svg" alt="sorriso">
+            </div>
+
+
+
+
     </main>
 
     <script src="script.js"></script>
     <script src="mouse.js"></script>
-    <script src="novo.js"></script>
-
+    <script src="dragdrop.js"></script>
+    <script src="texto.js"></script>
     <!--type="module"-->
 </body>
 
