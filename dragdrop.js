@@ -27,7 +27,7 @@ interact('.draggable')
       }
     }
   })
-
+//-------------------------------------------
 
   interact('#base')
     .dropzone({
@@ -56,7 +56,7 @@ interact('.draggable')
 
             if (isOverlapping(olhos, base) && isOverlapping(sorriso, base)) {
                 // Se sobrepostos, mostrar a frase
-                document.getElementById('frase').style.display = 'block';
+                document.getElementById('frase').style.display = 'flex';
             }
         },
         ondropdeactivate: function (event) {
@@ -77,6 +77,8 @@ function isOverlapping(element1, element2) {
         rect1.bottom > rect2.top
     );
 }
+
+//--------------------------------------
   
 function dragMoveListener(event) {
   var target = event.target

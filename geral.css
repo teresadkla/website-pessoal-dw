@@ -305,22 +305,37 @@ text {
 
   
 .base {
-    position: relative;
+   position: relative;
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
 }
 
-#frase {
-    display: none;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 18px;
-}
 
  #olhos{
     width: 35%;
     height: 35%;
+    position: relative;
+    margin-bottom: 20v;
+    margin-left: 10%;
+    bottom: 0vh;
 }
 #sorriso{
     width: 45%;
     height: 45%; 
+    position: relative;
+    margin-left: 80%;
+    bottom: 10vh;
+}
+#frase {
+    display: none;
+}
+
+.contacts{
+    width: 30%;
+    height: 30%;
+   display: flex;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center; 
 }
