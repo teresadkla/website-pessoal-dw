@@ -1,3 +1,7 @@
+//DRAG E DROP PARA COMPLETAR O STICKER/ ILUSTRAÇÃO --> criação de uma dropzone 
+//Código inspo exemplos do Interact.js
+
+
 interact('.draggable')
   .draggable({
     // enable inertial throwing
