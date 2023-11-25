@@ -12,7 +12,6 @@
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
 </head>
 
 <body>
@@ -49,14 +48,23 @@
                     </a></li>
             </ul>
         </div>
-        <div id="about" class="about">
-            <!-- <div class="box" ondragover="return false" ondrop="drop(this, event)">-->
-            <div class="text ink" id="text">
+        <!--
+        <div id="about" class="about">-->
+        <!-- <div class="box" ondragover="return false" ondrop="drop(this, event)">-->
+        <!---  <div class="text ink" id="text">
                 <p class="me">Hey there! My name is Teresa Fernandes and I am a very passionate designer and self taught artist. 
                     I like to believe I'm usually very chill and free spirited as well as hardworking.
                     I'm down for some crazy midnight filosophies. One day I will have a podcast so I can finally have a place to talk about them.
                     I'm a cat person. When I was younger learnt by myself how to do archery because I was (and still am) obsessed with The Hunger Games. 
                     </p>
+            </div>-->
+        <div class="about">
+            <!-- <div class="box" ondragover="return false" ondrop="drop(this, event)">-->
+            <div class="text ink" id="text">
+                <p class="me">Hey there! My name is Teresa Fernandes and I am a very passionate designer and self taught artist. 
+                    I like to believe I'm usually very chill and free spirited as well as hardworking.
+                    I'm down for some crazy midnight filosophies. One day I will have a podcast so I can finally have a place to talk about them.
+                    I'm a cat person. When I was younger learnt by myself how to do archery because I was (and still am) obsessed with The Hunger Games. </p>
             </div>
 
             <div class="words">
@@ -88,58 +96,59 @@
             <!-- </div>-->
         </div>
 
-       
-<div id="Contacts">
-        <div class="goofyflower">
-            <h4 class="moreinfo">Complete the ilustration to get my contacts </h4>
 
-            <img id="seta" src="images/seta.svg" alt="seta">
+        <div id="Contacts">
+            <div class="goofyflower">
+                <h4 class="moreinfo">Complete the ilustration to get my contacts </h4>
 
-            <div id="base" class="base">
-                <img src="images/base.svg" alt="base flower">
+                <img id="seta" src="images/seta.svg" alt="seta">
+
+                <div id="base" class="base">
+                    <img src="images/base.svg" alt="base flower">
+                </div>
+
+                <div id="olhos" class="draggable">
+                    <img src="images/olhos.svg" alt="olhinhos">
+                </div>
+                <div id="sorriso" class="draggable">
+                    <img src="images/sorriso.svg" alt="sorriso">
+                </div>
+
+                <div id="frase" class="contacts">
+                    <img class="icon" src="images/linkedin.png" alt="LinkedIn"
+                        onclick="window.location.href='https://www.linkedin.com/in/teresa-fernandes04/';">
+
+                    <img class="icon" src="images/behance.png" alt="behance"
+                        onclick="window.location.href='https://www.behance.net/teresafernandes04';">
+
+                    <img class="icon" src="images/git.png" alt="github"
+                        onclick="window.location.href='https://github.com/teresadkla';">
+
+                    <img class="icon" src="images/mail.png" alt="mail"
+                        onclick="window.location.href='mailto:teresafproject@gamil.com';">
+
+                    <img class=" icon" src="images/portfolio.png" alt="portfólio"
+                        onclick="window.location.href='https://drive.google.com/file/d/15oKbGk8I6wBAl9ci-g6VUp_q-mV9Psfb/view?usp=sharing';">
+
+                </div>
             </div>
+            <!--Animação mouse pointer  -->
+            <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 500 500">
+                <title>Circular Text Path</title>
 
-            <div id="olhos" class="draggable">
-                <img src="images/olhos.svg" alt="olhinhos">
-            </div>
-            <div id="sorriso" class="draggable">
-                <img src="images/sorriso.svg" alt="sorriso">
-            </div>
-
-            <div id="frase" class="contacts">
-                <img class="icon" src="images/linkedin.png" alt="LinkedIn"
-                    onclick="window.location.href='https://www.linkedin.com/in/teresa-fernandes04/';">
-
-                <img class="icon" src="images/behance.png" alt="behance"
-                    onclick="window.location.href='https://www.behance.net/teresafernandes04';">
-
-                <img class="icon" src="images/git.png" alt="github"
-                    onclick="window.location.href='https://github.com/teresadkla';">
-
-                <img class="icon" src="images/mail.png" alt="mail"
-                    onclick="window.location.href='mailto:teresafproject@gamil.com';">
-
-                <img class=" icon" src="images/portfolio.png" alt="portfólio"
-                    onclick="window.location.href='https://drive.google.com/file/d/15oKbGk8I6wBAl9ci-g6VUp_q-mV9Psfb/view?usp=sharing';">
-
-            </div>
-        </div>
- <!--Animação mouse pointer  -->
- <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" xmlns:xlink="http://www.w3.org/1999/xlink"
- viewBox="0 0 500 500">
- <title>Circular Text Path</title>
-
- <defs>
-     <path id="textcircle" d="M250,400
+                <defs>
+                    <path id="textcircle" d="M250,400
              a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
- </defs>
- <rect width="100%" height="100%" fill="none" />
- <text>
-     <textPath xlink:href="#textcircle" aria-label="All for One &amp; One for All" textLength="900"> Click
-         and drag! </textPath>
- </text>
+                </defs>
+                <rect width="100%" height="100%" fill="none" />
+                <text>
+                    <textPath xlink:href="#textcircle" aria-label="All for One &amp; One for All" textLength="900">
+                        Click
+                        and drag! </textPath>
+                </text>
 
-</svg>
+            </svg>
 
     </main>
 
