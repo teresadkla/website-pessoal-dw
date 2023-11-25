@@ -151,7 +151,7 @@ p {
     cursor: pointer;
     position: relative;
     bottom: 10vh;
-    margin-bottom: 5%;
+    margin-bottom: 35%;
 }
 
 .contacts {
@@ -161,8 +161,8 @@ p {
     margin-left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
-}
 
+}
 
     
 
@@ -606,10 +606,12 @@ p {
 
     .menulist {
         z-index: 50;
-        width: 53vw;
+        width: 91vw;
         height: 10vh;
         position: relative;
-        bottom: 48vh;
+        /* margin-top: -71vh; */
+        margin-top: 46vh;
+        bottom: 58vh;
     }
 
     .keywords {
@@ -659,13 +661,15 @@ p {
         font-size: 1.15rem;
     }
 
-    h4 {
-        font-size: 0.6rem;
+    .words h4 {
+        font-size: 0.9rem;
     }
-
+   .menulist h4 {
+        font-size: 1.1rem;
+    }
     p {
-        font-size: 0.6rem;
-        width: 60%;
+        font-size: 1.1rem;
+        width: 70%;
     }
 
     .name13sa {
@@ -730,13 +734,16 @@ p {
         justify-content: center;
     }
 #base{
-    width:50%;
+    width: 80%;
     z-index: -5;
+    top: 19vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
     #olhos {
-        width: 35%;
-        height: 35%;
+        width: 32%;
+        height: 32%;
         position: relative;
         margin-bottom: 20v;
         margin-left: 10%;
@@ -745,10 +752,10 @@ p {
 
     #sorriso {
         width: 45%;
-        height: 45%;
-        position: relative;
-        margin-left: 80%;
-        bottom: 10vh;
+    height: 45%;
+    position: relative;
+    margin-left: 45%;
+    bottom: 10vh;
     }
 
     svg {
@@ -765,4 +772,14 @@ p {
         top: 6vh;
         left: 10vw;
     }
+    .contacts{
+    width: 18%;
+    height: 30%;
+    display: flex;
+    margin-left: 50%;
+    /* gap: 10px; */
+    transform: translate(-50%, -50%);
+    justify-content: center;
+}
+
 }
