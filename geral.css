@@ -243,7 +243,7 @@ p {
 
     .menulist {
         z-index: 50;
-        width: 35vw;
+        width: 30vw;
         height: 10vh;
         position: relative;
         bottom: 20vh;
@@ -382,7 +382,7 @@ p {
 /* INTERMÉDIO/ TABLETS*/
 @media screen and (min-width: 600px) and (max-width: 980px) {
     img {
-        /* z-index: -50;*/
+         z-index: -50;
          width: 60%;
          height: 60%;
      }
@@ -587,7 +587,7 @@ p {
 /*MOBILE TELEMOVEL*/
 @media screen and (max-width: 600px) {
     img {
-        /* z-index: -50;*/
+         z-index: -50;
          width: 100%;
          height: 100%;
      }
@@ -606,10 +606,10 @@ p {
 
     .menulist {
         z-index: 50;
-        width: 75vw;
+        width: 53vw;
         height: 10vh;
         position: relative;
-        bottom: 43vh;
+        bottom: 48vh;
     }
 
     .keywords {
