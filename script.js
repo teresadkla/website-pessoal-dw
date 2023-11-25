@@ -1,14 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     var imageContainer = document.getElementById('intro');
-
-    // Array de imagens
+    //Array das imagens
     var imageSources = [
         'images/poster.png',
         'images/CCC.png',
         'images/credencial.png',
         'images/SA.png',
         'images/dot.png'
-    
     ];
 
     var usedImages = [];
@@ -16,11 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
     imageContainer.addEventListener('click', function (event) {
         // Ver se todas as imagens estão a ser usadas
         if (usedImages.length === imageSources.length) {
-            // Se sim dar reset no array de imgs
             usedImages = [];
         }
-
-
         //Ir buscar uma imagem random não usada ao array
         var unusedImageSources = imageSources.filter(function (source) {
             return !usedImages.includes(source);
@@ -28,30 +23,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var randomIndex = Math.floor(Math.random() * unusedImageSources.length);
         var randomImageSource = unusedImageSources[randomIndex];
-
-        // Marca a imagem como usada
+        //Imagem usada
         usedImages.push(randomImageSource);
-
-        // Cria um elemento imagem
+        //Cria elemento imagem
         var img = document.createElement('img');
-
-        // Set a src nessa imagem
+        //Atribuir a src à img
         img.src = randomImageSource;
-
-        // Set na posição segundo o click
+        //Atribuir estilo à img
         img.style.position = 'absolute';
-        img.style.left = (event.clientX - img.width / 2) + 'px';
+
+
+        img.style.left = (event.clientX - 50 - img.width / 2) + 'px';
+
         img.style.top = (event.clientY - img.height / 2) + 'px';
 
-        // Efeito bounce
         img.classList.add('bounce');
 
-        // Load img mantendo as suas proporções originias
         img.onload = function () {
-            // Calcula o aspect ratio
             var aspectRatio = img.width / img.height;
 
-            
             if (aspectRatio >= 1) {
                 img.style.width = '450px';
                 img.style.height = 'auto';
@@ -59,25 +49,22 @@ document.addEventListener('DOMContentLoaded', function () {
                 img.style.width = 'auto';
                 img.style.height = '450px';
             }
-
-            // Atualiza a posição segundo o click
-            img.style.left = (event.clientX - img.clientWidth / 2) + 'px';
-            img.style.top = (event.clientY - img.clientHeight / 2) + 'px';
-
+            //Imagens centradas e atuazlia a pos segundo o click
+            img.style.left = (event.clientX - 230 - img.clientWidth / 2) + 'px';
+            img.style.top = (event.clientY - 160 - img.clientHeight / 2) + 'px';
             // Acrescenta a imagem ao contentor respetivo
             imageContainer.appendChild(img);
         };
     });
 });
 
-
 function drop(target, event) {
     event.preventDefault();
     target.innerHTML = event.dataTransfer.getData("text/plain");
-  };
-
-  
+};
 
 
 
-  
+
+
+
