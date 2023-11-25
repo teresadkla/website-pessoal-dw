@@ -30,11 +30,13 @@ h1 {
     text-align: left;
     display: flex;
     justify-content: center;
+    mix-blend-mode: difference;
 
 }
 
 h2 {
     color: var(--claro);
+    mix-blend-mode: difference;
 
 }
 
@@ -621,7 +623,7 @@ p {
         position: relative;
         /* margin-top: -71vh; */
         margin-top: 46vh;
-        bottom: 58vh;
+        bottom: 65vh;
     }
 
     .keywords {

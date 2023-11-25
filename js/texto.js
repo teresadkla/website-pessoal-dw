@@ -1,4 +1,5 @@
-/*código  */
+//EFEITO INVISIBLE INK PARA O TEXTO
+//Código inspo: https://codemyui.com/ios-invisible-ink-on-websites/
 
 (function(){
     function wrapWords(el) {

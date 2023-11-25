@@ -1,3 +1,5 @@
+//SCRIPT PARA O CLICK/ ADD STICKERS NO HEADER
+
 document.addEventListener('DOMContentLoaded', function () {
     var imageContainer = document.getElementById('intro');
     //Array das imagens

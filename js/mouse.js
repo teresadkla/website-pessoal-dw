@@ -1,3 +1,5 @@
+//TEXTO CIRCULAR NO RATO  
+//Código inspo: https://codepen.io/designcourse/pen/abBgxVz
 
 const circleSvg = document.querySelector('svg')
 const btn = document.querySelector('button')

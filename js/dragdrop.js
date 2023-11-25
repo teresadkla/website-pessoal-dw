@@ -1,4 +1,7 @@
-interact('.draggable')
+//DRAG E DROP de palavras
+//Código inspo exemplos do Interact.js
+
+('.draggable')
   .draggable({
     // enable inertial throwing
     inertia: true,
